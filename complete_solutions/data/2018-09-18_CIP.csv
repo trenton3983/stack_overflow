@@ -1,0 +1,37 @@
+Category,CatCode,Agri-Food,Natural Resources,CleanTech,Advanced Manuf,Digital,Health
+Agricultural and domestic animal services,1.05,1,0,0,0,0,0
+Agricultural and food products processing,1.04,1,0,0,0,0,0
+Agricultural business and management,1.01,1,0,0,0,0,0
+Agricultural mechanization,1.02,1,0,0,0,0,0
+Agricultural production operations,1.03,1,0,0,0,0,0
+Agricultural public services,1.08,1,0,0,0,0,0
+"Agriculture, agriculture operations and related sciences, other",1.99,1,0,0,0,0,0
+"Agriculture, general",1,1,0,0,0,0,0
+Animal sciences,1.09,1,0,0,0,0,0
+Applied horticulture/horticultural business services,1.06,1,0,0,0,0,0
+Fishing and fisheries sciences and management,3.03,1,0,0,0,0,0
+Food science and technology,1.10,1,0,0,0,0,0
+Forestry,3.05,0,1,1,0,0,0
+International agriculture,1.07,1,0,0,0,0,0
+"Natural resources and conservation, other",3.99,0,1,1,0,0,0
+Natural resources conservation and research,3.01,0,1,1,0,0,0
+Natural resources management and policy,3.02,0,1,1,0,0,0
+Plant sciences,1.11,1,1,1,0,0,0
+Soil sciences,1.12,1,1,1,0,0,0
+Wildlife and wildlands science and management,3.06,0,1,1,0,0,0
+"Aerospace, aeronautical and astronautical/space engineering",14.02,0,0,0,1,0,0
+Agricultural engineering,14.03,1,0,1,1,0,0
+Architectural engineering,14.04,0,0,1,1,0,0
+Architectural engineering technology/technician,15.01,0,0,1,1,0,0
+Architectural history and criticism,4.08,0,0,0,0,0,0
+Architectural sciences and technology,4.09,0,0,0,0,0,0
+"Architecture (BArch, BA, BS, BSc, MArch, MA, MS, MSc, PhD)",4.02,0,0,1,1,0,0
+"Architecture and related services, other",4.99,0,0,1,1,0,0
+Biochemical engineering,14.43,0,0,0,1,0,1
+Bioengineering and biomedical engineering,14.05,0,0,0,1,0,1
+Biological/biosystems engineering,14.45,0,0,0,1,0,1
+Boilermaking/boilermaker,48.08,0,0,0,1,0,0
+"Building/construction finishing, management and inspection",46.04,0,0,1,1,0,0
+Carpentry/carpenter,46.02,0,0,0,1,0,0
+Ceramic sciences and engineering,14.06,0,0,0,1,0,0
+Chemical engineering,14.07,0,0,1,1,0,0
