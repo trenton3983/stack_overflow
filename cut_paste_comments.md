@@ -8,6 +8,7 @@
 
 [What should I do when someone answers my question?](https://stackoverflow.com/help/someone-answers)
 
+[How do I write a good answer?](https://stackoverflow.com/help/how-to-answer)
 
 ## For shitty questions:
 [How to ask a good question](https://stackoverflow.com/help/how-to-ask) & [What topics can I ask about here?](https://stackoverflow.com/help/on-topic) & [Minimal, Reproducible Example](https://stackoverflow.com/help/minimal-reproducible-example)
