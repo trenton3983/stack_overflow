@@ -2,7 +2,7 @@
 
 [Minimal, Reproducible Example](https://stackoverflow.com/help/minimal-reproducible-example)
 
-[How to make good reproducible pandas examples](https://stackoverflow.com/questions/20109391/how-to-make-good-reproducible-pandas-examples)
+Please include some data: [How to make good reproducible pandas examples](https://stackoverflow.com/questions/20109391/how-to-make-good-reproducible-pandas-examples)
 
 [What topics can I ask about here?](https://stackoverflow.com/help/on-topic)
 
@@ -12,7 +12,6 @@
 
 ## For shitty questions:
 [How to ask a good question](https://stackoverflow.com/help/how-to-ask) & [What topics can I ask about here?](https://stackoverflow.com/help/on-topic) & [Minimal, Reproducible Example](https://stackoverflow.com/help/minimal-reproducible-example)
-
 
 ## pathlib
 [pathlib](https://docs.python.org/3/library/pathlib.html) part of the standard library and should be used instead of `os`.  [Python 3's pathlib Module: Taming the File System](https://realpython.com/python-pathlib/)
