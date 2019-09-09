@@ -33,3 +33,7 @@ Here are some guidelines for [How do I write a good answer?](https://stackoverfl
 
 ## speed up apply
 [Fast, Flexible, Easy and Intuitive: How to Speed Up Your Pandas Projects](https://realpython.com/fast-flexible-pandas/) use `isin`, `cut` or `np.digitize`
+
+## code
+ - `"""description of the function"""`: use docstrings [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/)
+ - [Type annotations](https://realpython.com/python-type-checking/#annotations)
