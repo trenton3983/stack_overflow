@@ -37,3 +37,9 @@ Here are some guidelines for [How do I write a good answer?](https://stackoverfl
 ## code
  - `"""description of the function"""`: use docstrings [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/)
  - [Type annotations](https://realpython.com/python-type-checking/#annotations)
+ 
+ ## Code of Conduct:
+ [Code of Conduct](https://stackoverflow.com/conduct)
+ 
+ ## Very Low Quality
+ [Very Low Quality](https://meta.stackoverflow.com/questions/265573/am-i-misusing-the-very-low-quality-flag/265764#265764)
