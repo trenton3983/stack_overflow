@@ -6,7 +6,7 @@
 Please provide a [Minimal, Reproducible Example](https://stackoverflow.com/help/minimal-reproducible-example)
 
 Please include some data: [How to make good reproducible pandas examples](https://stackoverflow.com/questions/20109391/how-to-make-good-reproducible-pandas-examples)
-Please [provide a reproducible copy of the DataFrame with `to_clipboard`](https://stackoverflow.com/questions/52413246/how-do-i-provide-a-reproducible-copy-of-my-existing-dataframe)
+Please [provide a reproducible copy of the DataFrame with `to_clipboard`](https://stackoverflow.com/questions/52413246/provide-a-reproducible-copy-of-the-dataframe-with-to-clipboard/52413247#52413247)
 
 
 [What topics can I ask about here?](https://stackoverflow.com/help/on-topic)
@@ -66,8 +66,7 @@ The provided answer was flagged for review as a Low Quality Post.  Here are some
 Downvotes have nothing to do with the ease or difficulty of the question, they have to do with perceived effort, of trying to resolve the issue, prior to asking the question, the clarity with which the question is asked, and usefulness of the question to the Stack Overflow community. Additionally, there is such a thing as the question being to broad, and off-topic. Optimization questions, for existing functional code, is off-topic and should be asked in code review. Also, I'm not the one who downvoted your question.
  
 ## Installation
-[Can I ask questions about installation in SO?](https://meta.stackoverflow.com/questions/338203/can-i-ask-questions-about-installation-in-so) Software tools commonly used by programmers and is
-**a practical, answerable problem that is unique to software development.**
+[Can I ask questions about installation in SO?](https://meta.stackoverflow.com/questions/338203/can-i-ask-questions-about-installation-in-so) Questions about software tools commonly used by programmers must be **a practical, answerable problem unique to software development.**
 
 ## Revenge Downvoltes
 [What can I do about getting a sudden flood of revenge downvotes?](https://meta.stackexchange.com/questions/212332/what-should-you-do-if-youre-serial-downvoted-it-isnt-automatically-reversed/212339#212339)
