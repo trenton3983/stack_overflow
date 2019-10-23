@@ -11,7 +11,7 @@ Please [provide a reproducible copy of the DataFrame with `to_clipboard`](https:
 
 [What topics can I ask about here?](https://stackoverflow.com/help/on-topic)
 
-[What should I do when someone answers my question?](https://stackoverflow.com/help/someone-answers)  People tend to put a lot of time into answering questions thoroughly.  If a solution answers your question, please **check it**, or leave a comment if it doesn't resolve the issue.
+[What should I do when someone answers my question?](https://stackoverflow.com/help/someone-answers)  People tend to put a lot of time into answering questions thoroughly.  If a solution answers your question, please **check it**, or leave a comment if it doesn't resolve the issue.  The check is below the up / down arrow at the top left of the answer.
 
 ## Answers
 The provided answer was flagged for review as a Low Quality Post.  Here are some guidelines for [How do I write a good answer?](https://stackoverflow.com/help/how-to-answer).  This provided answer may be correct, but it could benefit from an explanation.  Code only answers are not considered "good" answers.  From [review](https://stackoverflow.com/review).
@@ -36,6 +36,9 @@ The provided answer was flagged for review as a Low Quality Post.  Here are some
 ## speed up apply
 [Fast, Flexible, Easy and Intuitive: How to Speed Up Your Pandas Projects](https://realpython.com/fast-flexible-pandas/) use `isin`, `cut` or `np.digitize`
 
+## Flatten JSON
+[How to flatten nested JSON recursively, with flatten_json?](https://stackoverflow.com/questions/58442723/how-to-flatten-nested-json-recursively-with-flatten-json)
+
 ## code
  - `"""description of the function"""`: use docstrings [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/)
  - [Type annotations](https://realpython.com/python-type-checking/#annotations)
@@ -44,6 +47,7 @@ The provided answer was flagged for review as a Low Quality Post.  Here are some
  - [Scope of Variables in Python](https://www.datacamp.com/community/tutorials/scope-of-variables-python)
  - [List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
  - [The `return` statement](https://docs.python.org/3/reference/simple_stmts.html?highlight=return#the-return-statement)
+ - [membership operator, `in`](https://docs.python.org/3/reference/expressions.html#membership-test-operations)
 ### f-strings
 [f-Strings: A New and Improved Way to Format Strings in Python](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python)
 [PEP 498 - Literal String Interpolation](https://www.python.org/dev/peps/pep-0498/)
@@ -70,3 +74,6 @@ Downvotes have nothing to do with the ease or difficulty of the question, they h
 
 ## Revenge Downvoltes
 [What can I do about getting a sudden flood of revenge downvotes?](https://meta.stackexchange.com/questions/212332/what-should-you-do-if-youre-serial-downvoted-it-isnt-automatically-reversed/212339#212339)
+
+## Links to code:
+[Something in my web site or project doesn't work. Can I just paste a link to it?](https://meta.stackoverflow.com/questions/254428/something-in-my-web-site-or-project-doesnt-work-can-i-just-paste-a-link-to-it)
