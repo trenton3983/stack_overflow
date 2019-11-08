@@ -28,7 +28,7 @@ The provided answer was flagged for review as a Low Quality Post.  Here are some
 [Stack Overflow Discourages Screenshots](https://meta.stackoverflow.com/questions/303812/discourage-screenshots-of-code-and-or-errors).  It is likely, the question will be downvoted, for containing unnecessary screenshots.  By using screenshots, you are discouraging anyone from assisting you.  No one wants to retype your stuff, from a screenshot, and screenshots are often, not readable.
 
 ## Off-Topic Questions
-[Should one advise on off-topic questions?](https://meta.stackoverflow.com/questions/276572/should-one-advise-on-off-topic-questions)
+[Do not advise on off-topic questions?](https://meta.stackoverflow.com/questions/276572/should-one-advise-on-off-topic-questions)
 
 ## Downvote
 [Downvoted because no attempt was made](http://idownvotedbecau.se/noattempt/)
@@ -77,3 +77,6 @@ Downvotes have nothing to do with the ease or difficulty of the question, they h
 
 ## Links to code:
 [Something in my web site or project doesn't work. Can I just paste a link to it?](https://meta.stackoverflow.com/questions/254428/something-in-my-web-site-or-project-doesnt-work-can-i-just-paste-a-link-to-it)
+
+## Code only:
+[What to do with code-only answers in Low Quality Posts queue?](https://meta.stackoverflow.com/questions/300694/what-to-do-with-code-only-answers-in-low-quality-posts-queue)
