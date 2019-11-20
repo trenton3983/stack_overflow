@@ -25,7 +25,7 @@ The provided answer was flagged for review as a Low Quality Post.  Here are some
 [How much research effort is expected of Stack Overflow users?](https://meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-users)
 
 ## No screenshots
-[Stack Overflow Discourages Screenshots](https://meta.stackoverflow.com/questions/303812/discourage-screenshots-of-code-and-or-errors).  It is likely, the question will be downvoted, for containing unnecessary screenshots.  By using screenshots, you are discouraging anyone from assisting you.  No one wants to retype your stuff, from a screenshot, and screenshots are often, not readable.
+[Stack Overflow Discourages Screenshots](https://meta.stackoverflow.com/questions/303812/discourage-screenshots-of-code-and-or-errors).  It is likely the question will be downvoted.  You are discouraging assistance because no one wants to retype your data or code, and screenshots are often illegible.
 
 ## Off-Topic Questions
 [Do not advise on off-topic questions?](https://meta.stackoverflow.com/questions/276572/should-one-advise-on-off-topic-questions)
