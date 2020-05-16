@@ -6,8 +6,7 @@
 Please provide a [Minimal, Reproducible Example](https://stackoverflow.com/help/minimal-reproducible-example)
 
 Please include some data: [How to make good reproducible pandas examples](https://stackoverflow.com/questions/20109391/how-to-make-good-reproducible-pandas-examples)
-Please [provide a reproducible copy of the DataFrame with `to_clipboard`](https://stackoverflow.com/questions/52413246/provide-a-reproducible-copy-of-the-dataframe-with-to-clipboard/52413247#52413247)
-
+Please [provide a reproducible copy of the DataFrame with `df.head(10).to_clipboard(sep=',')`](https://stackoverflow.com/questions/52413246/how-to-provide-a-copy-of-your-dataframe-with-to-clipboard)
 
 [What topics can I ask about here?](https://stackoverflow.com/help/on-topic)
 
