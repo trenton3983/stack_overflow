@@ -11,7 +11,10 @@ Posting a well-composed question on Stack Overflow increases the chances of rece
 3. **Provide a Minimal, Reproducible Example (MRE)**: This is critical.
     - **Minimal**: Only include the necessary code to reproduce the problem or illustrate your question. Remove everything that doesn’t matter to your current issue.
     - **Reproducible**: Make sure that someone can copy and paste your code into their environment and achieve the same results. This typically involves providing a small dataset or a way to generate one.
-
+    - **Do not post images of code or data**
+	  - Most contributors will not respond to questions without data.
+	  - If you must share a file, share it on a free GitHub account, not some other untrusted file sharing service.
+	
     * Example:
         ```python
         import seaborn as sns
