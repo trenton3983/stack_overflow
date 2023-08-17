@@ -2,7 +2,9 @@ Posting a well-composed question on Stack Overflow increases the chances of rece
 
 1. **Title**: Make it clear and concise. The title should give an overview of the problem so that potential answerers can quickly understand the issue.
 
-    * Example: "How to rotate x-axis labels in Seaborn?"
+    * Example: "How to rotate x-axis labels"
+	
+	- Do not put tags, like `seaborn`, `matplotlib` in the title
 
 2. **Introduction**: Start your post with a brief description of your goal.
 
