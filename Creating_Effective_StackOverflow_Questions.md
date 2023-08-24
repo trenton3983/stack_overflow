@@ -1,3 +1,5 @@
+# How to Create Effective StackOverflow Questions
+
 Posting a well-composed question on Stack Overflow increases the chances of receiving accurate and prompt answers. If you have a question involving `matplotlib`, `pandas`, or `seaborn` (or any combination of these), consider the following guidelines:
 
 1. **Title**: Make it clear and concise. The title should give an overview of the problem so that potential answerers can quickly understand the issue.
@@ -59,7 +61,13 @@ Posting a well-composed question on Stack Overflow increases the chances of rece
 
 10. **Be Respectful and Patient**: Remember that Stack Overflow is a community of volunteers. Always be polite, and don't bump your questions unnecessarily.
 
-After posting your question, actively engage with those who comment or answer. If someone provides a solution or asks for clarification, respond promptly and courteously. Once your question is resolved, don't forget to accept the best answer and upvote helpful responses. This rewards contributors and helps future readers identify the solution.
+After posting your question, actively engage with those who comment or answer. If someone provides a solution or asks for clarification, respond promptly and courteously.
+
+Once your question is resolved, don't forget to **accept the best answer** and [**upvote helpful responses**][13]. This rewards contributors and helps future readers identify the useful solutions.
+
+- To mark an answer as accepted, click on the check mark beside the top left corner of the answer to toggle it from greyed out to filled in.
+  - The ✔ is below the ▲/▼ arrow.
+  - [What should I do when someone answers my question?][12]
 
 ### References
 
@@ -85,3 +93,5 @@ After posting your question, actively engage with those who comment or answer. I
   [9]: https://meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-users
   [10]: https://seaborn.pydata.org/generated/seaborn.load_dataset.html
   [11]: https://scikit-learn.org/stable/datasets.html
+  [12]: https://stackoverflow.com/help/someone-answers
+  [13]: https://stackoverflow.com/help/privileges/vote-up
