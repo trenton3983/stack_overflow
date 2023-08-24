@@ -1,4 +1,4 @@
-# How to Create Effective StackOverflow Questions
+# How to Create Effective Stack Overflow Questions
 
 Posting a well-composed question on Stack Overflow increases the chances of receiving accurate and prompt answers. If you have a question involving `matplotlib`, `pandas`, or `seaborn` (or any combination of these), consider the following guidelines:
 
