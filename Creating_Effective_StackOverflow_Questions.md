@@ -16,6 +16,7 @@ Posting a well-composed question on Stack Overflow increases the chances of rece
     - [**Do not post images of code or data**][5]
 	  - Most contributors will not respond to questions without data.
 	  - If you must share a file, share it on a free GitHub account, not some other untrusted file sharing service.
+	  - Optionally, use a dataset from `seaborn` with [`df = sns.load_dataset(name)`][10], or [scikit-learn datasets][11].
 	
     * Example:
         ```python
@@ -82,3 +83,5 @@ After posting your question, actively engage with those who comment or answer. I
   [7]: https://stackoverflow.com/help/formatting
   [8]: https://stackoverflow.com/help/on-topic
   [9]: https://meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-users
+  [10]: https://seaborn.pydata.org/generated/seaborn.load_dataset.html
+  [11]: https://scikit-learn.org/stable/datasets.html
