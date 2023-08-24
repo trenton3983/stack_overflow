@@ -13,7 +13,7 @@ Posting a well-composed question on Stack Overflow increases the chances of rece
 3. **Provide a Minimal, Reproducible Example (MRE)**: This is critical.
     - **Minimal**: Only include the necessary code to reproduce the problem or illustrate your question. Remove everything that doesn’t matter to your current issue.
     - **Reproducible**: Make sure that someone can copy and paste your code into their environment and achieve the same results. This typically involves providing a small dataset or a way to generate one.
-    - **Do not post images of code or data**
+    - [**Do not post images of code or data**][5]
 	  - Most contributors will not respond to questions without data.
 	  - If you must share a file, share it on a free GitHub account, not some other untrusted file sharing service.
 	
@@ -59,3 +59,26 @@ Posting a well-composed question on Stack Overflow increases the chances of rece
 10. **Be Respectful and Patient**: Remember that Stack Overflow is a community of volunteers. Always be polite, and don't bump your questions unnecessarily.
 
 After posting your question, actively engage with those who comment or answer. If someone provides a solution or asks for clarification, respond promptly and courteously. Once your question is resolved, don't forget to accept the best answer and upvote helpful responses. This rewards contributors and helps future readers identify the solution.
+
+### References
+
+1. [The SSCCE: Short, Self Contained, Correct (Compilable), Example][1]
+2. Reproducible Data
+    - [How to provide a reproducible copy of your DataFrame with to_clipboard][2]
+	- [How to easily share a sample dataframe using df.to_dict][3]
+	- [How to make good reproducible pandas examples][4]
+3. [How to ask a good question][6]
+4. [Use formatted text][7]
+5. [What topics can I ask about here?][8]
+6. [How much research effort is expected of Stack Overflow users?][9]
+
+
+  [1]: http://sscce.org/
+  [2]: https://stackoverflow.com/q/52413246/7758804
+  [3]: https://stackoverflow.com/q/63163251/7758804
+  [4]: https://stackoverflow.com/q/20109391/7758804
+  [5]: https://meta.stackoverflow.com/questions/303812/discourage-screenshots-of-code-and-or-errors
+  [6]: https://stackoverflow.com/help/how-to-ask
+  [7]: https://stackoverflow.com/help/formatting
+  [8]: https://stackoverflow.com/help/on-topic
+  [9]: https://meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-users
