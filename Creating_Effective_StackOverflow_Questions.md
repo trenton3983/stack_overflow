@@ -19,10 +19,13 @@ Take the Stack Overflow [Tour][2] and see the [Help Center][3].
 3. **Provide a Minimal, Reproducible Example ([MRE][5])**: This is critical.
     - **Minimal**: Only include the necessary code to reproduce the problem or illustrate your question. Remove everything that doesn’t matter to your current issue.
     - **Reproducible**: Make sure that someone can copy and paste your code into their environment and achieve the same results. This typically involves providing a small dataset or a way to generate one.
-    - [**Do not post images of code or data**][6]
+      - [**Do not post images of code or data**][6]
 	  - Most contributors will not respond to questions without data.
-	  - If you must share a file, share it on a free GitHub account, not some other untrusted file sharing service.
-	  - Optionally, use a dataset from `seaborn` with [`df = sns.load_dataset(name)`][7], or [scikit-learn datasets][8].
+	    - If you must share a file, share it on a free GitHub account, not some other untrusted file sharing service.
+	    - Optionally, use a dataset from `seaborn` with [`df = sns.load_dataset(name)`][7], or [scikit-learn datasets][8].
+		- [How to provide a reproducible copy of your DataFrame with to_clipboard][9]
+	    - [How to easily share a sample dataframe using df.to_dict][10]
+	    - [How to make good reproducible pandas examples][11]
 	
     * Example:
         ```python
@@ -56,33 +59,30 @@ Take the Stack Overflow [Tour][2] and see the [Help Center][3].
     - Code should be formatted using the `{}` button or by indenting with 4 spaces.
     - If showing a traceback/error, format it as code so it's readable.
     - Use bullet points or numbered lists if appropriate.
-    - [How do I format my posts using Markdown or HTML?][9]
+    - [How do I format my posts using Markdown or HTML?][12]
 
 8. **Tag Appropriately**: Tagging helps get the attention of experts in the relevant domains. In your case, you might want to tag `python`, `matplotlib`, `pandas`, and `seaborn`.
 
 9. **Include Desired vs. Current Output**:
     - Clearly state what you expect to happen or what you want to achieve.
     - Explain what's currently happening and how it differs from your desired output.
+	- If necessary, include a hand-drawn example.
 
 10. **Be Respectful and Patient**: Remember that Stack Overflow is a community of volunteers. Always be polite, and don't bump your questions unnecessarily.
 
 After posting your question, actively engage with those who comment or answer. If someone provides a solution or asks for clarification, respond promptly and courteously.
 
-Once your question is resolved, don't forget to **accept the best answer** and [**upvote helpful responses**][10]. This rewards contributors and helps future readers identify the useful solutions.
+Once your question is resolved, don't forget to **accept the best answer** and [**upvote helpful responses**][13]. This rewards contributors and helps future readers identify the useful solutions.
 
 - To mark an answer as accepted, click on the check mark beside the top left corner of the answer to toggle it from greyed out to filled in.
   - The ✔ is below the ▲/▼ arrow.
-  - [What should I do when someone answers my question?][11]
+  - [What should I do when someone answers my question?][14]
 
 ### References
 
-1. [The SSCCE: Short, Self Contained, Correct (Compilable), Example][12]
-2. Reproducible Data
-    - [How to provide a reproducible copy of your DataFrame with to_clipboard][13]
-	- [How to easily share a sample dataframe using df.to_dict][14]
-	- [How to make good reproducible pandas examples][15]
-3. [How to ask a good question][16]
-4. [What topics can I ask about here?][17]
+1. [The SSCCE: Short, Self Contained, Correct (Compilable), Example][15]
+2. [How to ask a good question][16]
+3. Some questions are off-topic, and not allowed. [What topics can I ask about here?][17]
 
 
   [1]: https://meta.stackoverflow.com/questions/261592/how-much-research-effort-is-expected-of-stack-overflow-users
@@ -93,12 +93,12 @@ Once your question is resolved, don't forget to **accept the best answer** and [
   [6]: https://meta.stackoverflow.com/questions/303812/discourage-screenshots-of-code-and-or-errors
   [7]: https://seaborn.pydata.org/generated/seaborn.load_dataset.html
   [8]: https://scikit-learn.org/stable/datasets.html
-  [9]: https://stackoverflow.com/help/formatting
-  [10]: https://stackoverflow.com/help/privileges/vote-up
-  [11]: https://stackoverflow.com/help/someone-answers
-  [12]: http://sscce.org/
-  [13]: https://stackoverflow.com/q/52413246/7758804
-  [14]: https://stackoverflow.com/q/63163251/7758804
-  [15]: https://stackoverflow.com/q/20109391/7758804
+  [9]: https://stackoverflow.com/q/52413246/7758804
+  [10]: https://stackoverflow.com/q/63163251/7758804
+  [11]: https://stackoverflow.com/q/20109391/7758804
+  [12]: https://stackoverflow.com/help/formatting
+  [13]: https://stackoverflow.com/help/privileges/vote-up
+  [14]: https://stackoverflow.com/help/someone-answers
+  [15]: http://sscce.org/
   [16]: https://stackoverflow.com/help/how-to-ask
   [17]: https://stackoverflow.com/help/on-topic
