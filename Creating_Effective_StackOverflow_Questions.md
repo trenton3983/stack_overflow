@@ -2,7 +2,7 @@
 
 The Stack Overflow [Tour][1] states, _we're working together to build a library of detailed, high-quality answers to every question about programming._
 
-Which means, your questions probably has an existing answer.
+Which means, your question probably has an existing answer.
 
 Prior to posting a question, contributors **usually** expect some adherence to → [How much research effort is expected of Stack Overflow users?][2]
 
