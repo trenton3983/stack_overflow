@@ -6,9 +6,9 @@ Which means, your questions probably has an existing answer.
 
 Prior to posting a question, contributors **usually** expect some adherence to → [How much research effort is expected of Stack Overflow users?][2]
 
-Consider the following guidelines for posting a well-composed question on Stack Overflow to increase the chances of receiving accurate and prompt answers.
-
 Questions not showing any effort, or with just text requesting a resolution, are **likely** to be downvoted and closed.
+
+Consider the following guidelines for posting a well-composed question on Stack Overflow to increase the chances of receiving accurate and prompt answers.
 
 1. **Title**: Make it clear and concise. The title should give an overview of the problem so that potential answerers can quickly understand the issue.
 
