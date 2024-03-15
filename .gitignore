@@ -21,3 +21,6 @@ data/so_data/2020-09-19  63975678/daily-min-temperatures.csv
 *.log
 /Tools/logs
 /Tools/output
+/cache
+*.csv
+*.xls
