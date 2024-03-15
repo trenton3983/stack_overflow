@@ -22,7 +22,7 @@ class MetaSOParser:
         self.links = []
         logging.basicConfig(filename=f"./logs/link_only.log", level=self.LOG_LEVEL)
 
-    def metaso_linkonly(self):
+    def meta_so_link_only(self):
         questions_url = "https://api.stackexchange.com/2.3/search/advanced"
         questions = []
         page = 1
@@ -63,7 +63,8 @@ class MetaSOParser:
             json.dump(questions, f)
         print(f"Number of questions: {len(questions)}")
 
-    def parse_questions_json(self):
+    @staticmethod
+    def parse_questions_json():
         with open("output/questions.json", "r") as f:
             data = json.load(f)
         with open(
@@ -88,7 +89,7 @@ class MetaSOParser:
                         f"Score: {answer.get('score', '')} - {answer.get('body', '')}\n"
                     )
 
-    def download_flagged_linkonly_answers(self):
+    def download_flagged_link_only_answers(self):
         with open("output/question_urls.txt", "r") as f:
             urls = f.readlines()
         answer_ids = [url.strip().split("/")[-1] for url in urls]
@@ -122,12 +123,12 @@ class MetaSOParser:
                 logging.error(f"Request failed: {e}")
                 time.sleep(5)
             self.answers.append(answer_details)
-        with open("output/flagged_linkonly_answers.json", "w") as f:
+        with open("output/flagged_link_only_answers.json", "w") as f:
             json.dump(self.answers, f)
 
 
 if __name__ == "__main__":
     parser = MetaSOParser()
-    parser.metaso_linkonly()
+    parser.meta_so_link_only()
     parser.parse_questions_json()
-    parser.download_flagged_linkonly_answers()
+    parser.download_flagged_link_only_answers()
