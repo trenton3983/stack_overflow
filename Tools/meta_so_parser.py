@@ -49,7 +49,7 @@ class MetaSOParser:
                         for question in data["items"]
                         if any(
                             x in question["title"].lower()
-                            for x in ["link only", "link-only", "linkonly"]
+                            for x in ["link only", "link-only"]
                         )
                     ]
                 )
