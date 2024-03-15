@@ -22,6 +22,18 @@ class MetaSOParser:
         self.links = []
         logging.basicConfig(filename=f"./logs/link_only.log", level=self.LOG_LEVEL)
 
+    def api_request(self, url, params):
+        try:
+            response = requests.get(url, params=params)
+            data = json.loads(response.text)
+            if "backoff" in data:
+                time.sleep(data["backoff"])
+            return data
+        except requests.exceptions.RequestException as e:
+            logging.error(f"Request failed: {e}")
+            time.sleep(5)
+            return None
+
     def meta_so_link_only(self):
         questions_url = "https://api.stackexchange.com/2.3/search/advanced"
         questions = []
@@ -38,27 +50,20 @@ class MetaSOParser:
                 "pagesize": self.PAGE_SIZE,
                 "q": "link only",
             }
-            try:
-                response = requests.get(questions_url, params=params)
-                data = json.loads(response.text)
-                if not data["items"]:
-                    break
-                questions.extend(
-                    [
-                        question
-                        for question in data["items"]
-                        if any(
-                            x in question["title"].lower()
-                            for x in ["link only", "link-only"]
-                        )
-                    ]
-                )
-                if "backoff" in data:
-                    time.sleep(data["backoff"])
-                page += 1
-            except requests.exceptions.RequestException as e:
-                logging.error(f"Request failed: {e}")
-                time.sleep(5)
+            data = self.api_request(questions_url, params)
+            if not data or not data["items"]:
+                break
+            questions.extend(
+                [
+                    question
+                    for question in data["items"]
+                    if any(
+                        x in question["title"].lower()
+                        for x in ["link only", "link-only"]
+                    )
+                ]
+            )
+            page += 1
         with open("output/questions.json", "w") as f:
             json.dump(questions, f)
         print(f"Number of questions: {len(questions)}")
@@ -108,20 +113,11 @@ class MetaSOParser:
                 "body": "",
                 "link": f"https://stackoverflow.com/a/{answer_id}",
             }
-            try:
-                response = requests.get(
-                    answers_url.format(ids=answer_id), params=params
-                )
-                data = json.loads(response.text)
-                if "items" in data and data["items"]:
-                    answer = data["items"][0]
-                    answer_details["is_deleted"] = answer.get("is_deleted", False)
-                    answer_details["body"] = answer.get("body", "")
-                if "backoff" in data:
-                    time.sleep(data["backoff"])
-            except requests.exceptions.RequestException as e:
-                logging.error(f"Request failed: {e}")
-                time.sleep(5)
+            data = self.api_request(answers_url.format(ids=answer_id), params)
+            if data and "items" in data and data["items"]:
+                answer = data["items"][0]
+                answer_details["is_deleted"] = answer.get("is_deleted", False)
+                answer_details["body"] = answer.get("body", "")
             self.answers.append(answer_details)
         with open("output/flagged_link_only_answers.json", "w") as f:
             json.dump(self.answers, f)
