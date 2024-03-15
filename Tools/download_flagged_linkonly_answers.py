@@ -71,5 +71,5 @@ for answer_id in answer_ids:
     answers.append(answer_details)
 
 # Write the answers to a JSON file
-with open("output/flagged_linkonly_answers.json", "w") as f:
+with open("output/flagged_link_only_answers.json", "w") as f:
     json.dump(answers, f)
