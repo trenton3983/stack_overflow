@@ -6,7 +6,6 @@ import logging
 from pathlib import Path
 
 # Define constants
-BODY_LENGTH_LIMIT = 500
 PAGE_SIZE = 100
 LOG_LEVEL = logging.INFO
 tags = "discussion"
