@@ -12,11 +12,14 @@ BODY_LENGTH_LIMIT = 500
 PAGE_SIZE = 100
 LOG_LEVEL = logging.INFO
 tags = "python;matplotlib"
-start_date = "2012-01-01"
-end_date = "2012-12-31"
+start_date = "2024-02-01"
+end_date = "2024-02-29"
 
 # Set up logging
-logging.basicConfig(filename = f"00_log_{start_date}_{end_date}.log", level=LOG_LEVEL)
+logging.basicConfig(
+    filename=f"./logs/{start_date}_{end_date}_link_only.log", level=LOG_LEVEL
+)
+
 
 def month_range(start_date, end_date):
     """Generate start and end dates for each month in the range."""
@@ -26,12 +29,13 @@ def month_range(start_date, end_date):
         yield start_date, min(end_date, end_date_month)
         start_date = end_date_month
 
+
 # Load the configuration file
 config = configparser.ConfigParser()
-config.read(r'D:\\users\\trenton\\Dropbox\\PythonProjects\\config_api.ini')
+config.read(r"D:\\users\\trenton\\Dropbox\\PythonProjects\\config_api.ini")
 
 # Get the API key from the configuration file
-api_key = config.get('stackapps', 'key')
+api_key = config.get("stackapps", "key")
 
 # Define the API endpoint for questions
 questions_url = "https://api.stackexchange.com/2.3/questions"
@@ -49,7 +53,9 @@ for start_date_month, end_date_month in month_range(start_date, end_date):
     end_date_unix = int(end_date_month.timestamp())
 
     # Log start_date_str
-    logging.info(f"Start Date: {start_date_month.strftime('%Y-%m-%d')}, End Date: {end_date_month.strftime('%Y-%m-%d')}")
+    logging.info(
+        f"Start Date: {start_date_month.strftime('%Y-%m-%d')}, End Date: {end_date_month.strftime('%Y-%m-%d')}"
+    )
 
     page = 1
     while True:
@@ -64,7 +70,7 @@ for start_date_month, end_date_month in month_range(start_date, end_date):
             "filter": "!-*jbN-o8P3E5",
             "key": api_key,
             "page": page,
-            "pagesize": PAGE_SIZE
+            "pagesize": PAGE_SIZE,
         }
 
         try:
@@ -81,17 +87,23 @@ for start_date_month, end_date_month in month_range(start_date, end_date):
                 # Check if the question has answers
                 if "answers" in question:
                     # Filter for answers that may primarily be link-only and exclude links from https://i.stack.imgur.com
-                    link_only_answers = [item for item in question["answers"] if "http" in item["body"]
-                                         and "https://i.stack.imgur.com" not in item["body"]
-                                         and "<code>" not in item["body"]
-                                         and len(item["body"]) < BODY_LENGTH_LIMIT]
+                    link_only_answers = [
+                        item
+                        for item in question["answers"]
+                        if "http" in item["body"]
+                        and "https://i.stack.imgur.com" not in item["body"]
+                        and "<code>" not in item["body"]
+                        and len(item["body"]) < BODY_LENGTH_LIMIT
+                    ]
 
                     if link_only_answers:
                         logging.info(f"Question ID: {question['question_id']}")
                         # Log the link-only answers
                         for answer in link_only_answers:
                             link = f"https://stackoverflow.com/a/{answer['answer_id']}"
-                            logging.info(f"Answer ID: {answer['answer_id']}, Link: {link}")
+                            logging.info(
+                                f"Answer ID: {answer['answer_id']}, Link: {link}"
+                            )
                             # Add the link to the list
                             links.append(link)
             logging.info(f'Remaining Quota: {data["quota_remaining"]}')
