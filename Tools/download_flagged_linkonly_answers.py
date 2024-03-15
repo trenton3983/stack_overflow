@@ -9,7 +9,7 @@ from pathlib import Path
 current_dir = Path(__file__).parent
 
 # Define the relative path to the config file
-config_file_path = current_dir / ".." / "PythonProjects" / "config_api.ini"
+config_file_path = current_dir / ".." / ".." / "config_api.ini"
 
 # Load the configuration file
 config = configparser.ConfigParser()

@@ -13,8 +13,8 @@ BODY_LENGTH_LIMIT = 500
 PAGE_SIZE = 100
 LOG_LEVEL = logging.INFO
 tags = "python;matplotlib"
-start_date = "2024-02-01"
-end_date = "2024-02-29"
+start_date = "2013-01-01"
+end_date = "2013-12-31"
 
 # Set up logging
 logging.basicConfig(
@@ -35,7 +35,7 @@ def month_range(start_date, end_date):
 current_dir = Path(__file__).parent
 
 # Define the relative path to the config file
-config_file_path = current_dir / ".." / "PythonProjects" / "config_api.ini"
+config_file_path = current_dir / ".." / ".." / "config_api.ini"
 
 # Load the configuration file
 config = configparser.ConfigParser()
