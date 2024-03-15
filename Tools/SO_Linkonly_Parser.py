@@ -5,6 +5,7 @@ import configparser
 import time
 import webbrowser
 import logging
+from pathlib import Path
 
 # Define constants
 DAYS_IN_MONTH = 32
@@ -30,9 +31,17 @@ def month_range(start_date, end_date):
         start_date = end_date_month
 
 
+# Get the current script's directory
+current_dir = Path(__file__).parent
+
+# Define the relative path to the config file
+config_file_path = current_dir / ".." / "PythonProjects" / "config_api.ini"
+
 # Load the configuration file
 config = configparser.ConfigParser()
-config.read(r"D:\\users\\trenton\\Dropbox\\PythonProjects\\config_api.ini")
+
+# Read the config file
+config.read(config_file_path)
 
 # Get the API key from the configuration file
 api_key = config.get("stackapps", "key")
