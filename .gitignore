@@ -19,3 +19,5 @@ data/so_data/2020-09-08 63800602/SO - 63800602.url
 data/so_data/2020-09-19  63975678/carringtonairtemp.csv
 data/so_data/2020-09-19  63975678/daily-min-temperatures.csv
 *.log
+/Tools/logs
+/Tools/output
