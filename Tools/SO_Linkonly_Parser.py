@@ -7,14 +7,24 @@ import webbrowser
 import logging
 from pathlib import Path
 
-# Define constants
-DAYS_IN_MONTH = 32
-BODY_LENGTH_LIMIT = 500
-PAGE_SIZE = 100
-LOG_LEVEL = logging.INFO
-tags = "python;matplotlib"
-start_date = "2013-01-01"
-end_date = "2013-12-31"
+
+# Load the constants configuration file
+constants = configparser.ConfigParser()
+
+# Define the relative path to the config file
+constants_file_path = Path(__file__).parent / "so_linkonly_parser_config.ini"
+
+# Read the config file
+constants.read(constants_file_path)
+
+# Access the constants
+DAYS_IN_MONTH = constants.getint('DEFAULT', 'DAYS_IN_MONTH')
+BODY_LENGTH_LIMIT = constants.getint('DEFAULT', 'BODY_LENGTH_LIMIT')
+PAGE_SIZE = constants.getint('DEFAULT', 'PAGE_SIZE')
+LOG_LEVEL = constants.get('DEFAULT', 'LOG_LEVEL')
+tags = constants.get('DEFAULT', 'TAGS')
+start_date = constants.get('DEFAULT', 'START_DATE')
+end_date = constants.get('DEFAULT', 'END_DATE')
 
 # Set up logging
 logging.basicConfig(
