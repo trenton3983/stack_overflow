@@ -33,12 +33,10 @@ logging.basicConfig(
 
 
 def month_range(start_date, end_date):
-    """Generate start and end dates for each month in the range."""
-    start_date = start_date.replace(day=1)
+    """Generate start and end dates for each day in the range."""
     while start_date < end_date:
-        end_date_month = (start_date + timedelta(days=DAYS_IN_MONTH)).replace(day=1)
-        yield start_date, min(end_date, end_date_month)
-        start_date = end_date_month
+        yield start_date, start_date + timedelta(days=1)
+        start_date += timedelta(days=2)
 
 
 # Get the current script's directory
