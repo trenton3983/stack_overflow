@@ -104,14 +104,16 @@ for start_date_month, end_date_month in month_range(start_date, end_date):
                 # Check if the question has answers
                 if "answers" in question:
                     # Filter for answers that may primarily be link-only and exclude links from https://i.stack.imgur.com
-                    link_only_answers = [
-                        item
-                        for item in question["answers"]
-                        if "http" in item["body"]
-                        and "https://i.stack.imgur.com" not in item["body"]
-                        and "<code>" not in item["body"]
-                        and len(item["body"]) < BODY_LENGTH_LIMIT
-                    ]
+                    link_only_answers = [item
+                                         for item in question["answers"]
+                                         if len(ib := item["body"].lower()) < BODY_LENGTH_LIMIT
+                                         and "<code>" not in ib
+                                         and (
+                                                 ("http" in ib and ("https://i.stack.imgur.com/" not in ib))
+                                                 or
+                                                 ("http" in ib and ("https://github.com/" not in ib and ("bug" not in ib or "patch" not in ib)))
+                                         )
+                                         ]
 
                     if link_only_answers:
                         logging.info(f"Question ID: {question['question_id']}")
