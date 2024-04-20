@@ -32,10 +32,10 @@ The full data file can be found [here](https://raw.githubusercontent.com/trenton
 
 ## Dependencies
 
-- Python
-- pandas
-- numpy
-- matplotlib
+- Python version: 3.12.0
+- pandas version: 2.2.1
+- numpy version: 1.26.4
+- matplotlib version: 3.8.1
 
 ## References
 
