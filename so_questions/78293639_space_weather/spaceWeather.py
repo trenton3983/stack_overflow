@@ -9,8 +9,9 @@ import matplotlib.axes
 
 class SpaceWeather:
     """
-    https://stackoverflow.com/q/78293639/7758804
+    Solution to Stack Overflow question https://stackoverflow.com/q/78293639/7758804
     """
+
     def __init__(self, file_path: str):
         """
         Initialize the SpaceWeather class.
@@ -27,15 +28,19 @@ class SpaceWeather:
     def load_and_clean_data(self):
         """
         Load and clean the space weather data.
+        The code for which is from https://stackoverflow.com/a/78294905/7758804
         """
-        # Load the data
-        self.df = pd.read_csv(self.file_path)[1:]
-        self.df = self.df.rename(columns={"Unnamed: 0": "date"})
-        self.df.date = pd.to_datetime(self.df.date)
-        self.df = self.df.sort_values(by="date")
+        # Load the necessary columns, parse dates, skip header, and rename columns
+        self.df = pd.read_csv(
+            self.file_path,
+            parse_dates=[0],
+            skiprows=1,
+            usecols=[0, 4, 6],
+            names=["date", "kp", "dst"],
+            header=0,
+        )
 
-        # Clean the data
-        self.df = self.df.drop(columns=["year", "doy", "hr"])  # remove some columns
+        # Extract day of year and hour into new columns
         self.df["day_of_year"] = self.df["date"].dt.day_of_year  # new columns
         self.df["hour"] = self.df["date"].dt.hour
 
@@ -44,13 +49,15 @@ class SpaceWeather:
         self.df.loc[(self.df.kp > 40) | (self.df.dst < -30), "event"] = "S"
         self.df.loc[self.df.date == pd.Timestamp("2020/09/01 01:00"), "event"] = "E"
 
-        # Create pivot tables
+        # Create image data
         self.img_data = self.df.pivot_table(
             index="hour", columns="day_of_year", values="dst"
         ).values
+        # Create labels to be used as annotations
         self.labels = self.df.pivot(
             index="hour", columns="day_of_year", values="event"
         ).values
+        # Create date range for x-axis
         self.dates = pd.date_range(
             start=self.df.date.min(),
             end=self.df.date.max() + pd.offsets.Day(),
@@ -61,6 +68,7 @@ class SpaceWeather:
     def plot_data(self, plot_type: str = "imshow"):
         """
         Plot the space weather data.
+        The code for plotting is from https://stackoverflow.com/a/78294536/7758804
 
         Parameters:
         plot_type (str): The type of plot to create. Options are 'imshow', 'pcolormesh', 'contourf', 'plot_surface'.
@@ -108,7 +116,9 @@ class SpaceWeather:
         )
         self.format_plot(f, im, ax, "imshow")
 
-    def plot_pcolormesh(self, x: np.ndarray, y: np.ndarray, common_params: Dict[str, Union[int, str]]):
+    def plot_pcolormesh(
+        self, x: np.ndarray, y: np.ndarray, common_params: Dict[str, Union[int, str]]
+    ):
         """
         Plot the space weather data using pcolormesh.
 
@@ -121,7 +131,9 @@ class SpaceWeather:
         im = ax.pcolormesh(x, y, self.img_data, **common_params)
         self.format_plot(f, im, ax, "pcolormesh")
 
-    def plot_contourf(self, x: np.ndarray, y: np.ndarray, common_params: Dict[str, Union[int, str]]):
+    def plot_contourf(
+        self, x: np.ndarray, y: np.ndarray, common_params: Dict[str, Union[int, str]]
+    ):
         """
         Plot the space weather data using contourf.
 
@@ -134,7 +146,9 @@ class SpaceWeather:
         im = ax.contourf(x, y, self.img_data, levels=10, **common_params)
         self.format_plot(f, im, ax, "contourf")
 
-    def plot_surface(self, x: np.ndarray, y: np.ndarray, common_params: Dict[str, Union[int, str]]):
+    def plot_surface(
+        self, x: np.ndarray, y: np.ndarray, common_params: Dict[str, Union[int, str]]
+    ):
         """
         Plot the space weather data using plot_surface.
 
@@ -172,10 +186,17 @@ class SpaceWeather:
             **common_params,
         )
         ax.set_zlabel("Dst")
+        ax.invert_xaxis()  # Orders the dates from left to right
+        ax.invert_yaxis()  # Orders the hours from front to back
         self.format_plot(f, im, ax, "plot_surface")
 
-    def format_plot(self, f: matplotlib.figure.Figure, im: matplotlib.image.AxesImage, ax: matplotlib.axes.Axes,
-                    plot_type: str):
+    def format_plot(
+        self,
+        f: matplotlib.figure.Figure,
+        im: matplotlib.image.AxesImage,
+        ax: matplotlib.axes.Axes,
+        plot_type: str,
+    ):
         """
         Format the plot.
 
